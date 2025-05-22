@@ -25,8 +25,9 @@ The application supports **three** types of users with specific access levels:
 * Access **Home Page**
 * View available **Events**
 
-**UI Preview:**
+
 ![Guest View - Home](https://github.com/user-attachments/assets/dcea6edb-7cda-41fa-8d05-6da65c2a51a9)
+
 ![Guest View - Events](https://github.com/user-attachments/assets/c5bd79b5-f4e7-4753-81ec-3d03e5529bfc)
 
 ---
@@ -35,7 +36,7 @@ The application supports **three** types of users with specific access levels:
 
 * Can **Create New Events**
 
-**UI Preview:**
+
 ![Authenticated User - Create Event](https://github.com/user-attachments/assets/e1a8ba5b-88d0-49ec-a65f-34a7f628a04b)
 
 ---
@@ -44,7 +45,7 @@ The application supports **three** types of users with specific access levels:
 
 * Can **Manage All Events** (edit, delete, etc.)
 
-**UI Preview:**
+
 ![Admin View - Manage Events](https://github.com/user-attachments/assets/5e6e8c16-9db9-489c-ab59-ed7f56fb0e20)
 
 ---
