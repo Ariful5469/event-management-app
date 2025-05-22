@@ -1,4 +1,3 @@
-Here's a more polished and stylish version of your GitHub README file for the Event Management App. It uses Markdown formatting for clarity, visual hierarchy, and a professional structure:
 
 ---
 
