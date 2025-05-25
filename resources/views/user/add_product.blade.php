@@ -102,7 +102,7 @@
     <div class="page-content">
       <div class="page-header">
         <div class="container-fluid">
-          <h2 class="h5 no-margin-bottom">Add New Product</h2>
+          <h2 class="h5 no-margin-bottom">Add New Event</h2>
         </div>
       </div>
 

@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\SellerController;
+use App\Http\Controllers\UserController;
 route::get('/', [HomeController::class, 'home']);
 
 route::get('/dashboard', [HomeController::class, 'home'])->middleware(['auth', 'verified'])->name('dashboard');
@@ -55,9 +55,9 @@ route::get('view_product', [AdminController::class, 'view_product'])->
    middleware(['auth','admin']);
 
 
-   route::get('search_product', [SellerController::class, 'search_product'])->
+   route::get('search_product', [UserController::class, 'search_product'])->
    middleware(['auth','seller']);
-   route::get('search_product', [SellerController::class, 'search_product'])->
+   route::get('search_product', [UserController::class, 'search_product'])->
    middleware(['auth','verified']);
 
  
@@ -68,20 +68,20 @@ route::get('product_details/{id}', [HomeController::class, 'product_details']);
 
 
 
-route::get('seller/dashboard', [SellerController::class, 'index'])
+route::get('seller/dashboard', [UserController::class, 'index'])
     ->middleware(['auth', 'seller']);
 
 
- route::get('index', [SellerController::class, 'index'])->middleware(['auth','seller']);
+ route::get('index', [UserController::class, 'index'])->middleware(['auth','seller']);
     
  
 
- route::get('add_product', [SellerController::class, 'add_product'])->middleware(['auth','seller']);
+ route::get('add_product', [UserController::class, 'add_product'])->middleware(['auth','seller']);
  
- route::post('upload_product_seller', [SellerController::class, 'upload_product'])->
+ route::post('upload_product_seller', [UserController::class, 'upload_product'])->
     middleware(['auth','seller']);
  
-    route::post('profile', [SellerController::class, 'profile'])->
+    route::post('profile', [UserController::class, 'profile'])->
     middleware(['auth','seller']);
  
  

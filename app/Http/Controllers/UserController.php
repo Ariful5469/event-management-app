@@ -8,13 +8,13 @@ use App\Models\Product;
 use App\Models\Order;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-class SellerController extends Controller
+class UserController extends Controller
 {
 
     public function profile()
 {
     $seller = Auth::user(); // Already authenticated & seller due to middleware
-    return view('seller.profile', compact('seller'));
+    return view('user.profile', compact('seller'));
 }
     public function index()
      {
@@ -23,7 +23,7 @@ class SellerController extends Controller
      
       
          
-         return view('seller.index');
+         return view('user.index');
      }
 
   
@@ -49,7 +49,7 @@ class SellerController extends Controller
     public function add_product()
     {
        
-        return view('seller.add_product');
+        return view('user.add_product');
     }
     
 
